@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.tuitionfinder">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TuitionFinder"
+        tools:targetApi="31">
+        <activity
+            android:name=".MessageActivity2"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Chat_Tuition"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateTuitionCenter"
+            android:exported="false"
+            android:label="Update Tuition Center Information" />
+        <activity
+            android:name=".TuitionReview"
+            android:exported="false"
+            android:label="Reviews" />
+        <activity
+            android:name=".Rating_Reviews"
+            android:exported="false"
+            android:label="To Rate" />
+        <activity
+            android:name=".BookingDetail_tuition"
+            android:exported="false"
+            android:label="Booking Detail" />
+        <activity
+            android:name=".BookingList"
+            android:exported="false"
+            android:label="Student Booking List" />
+        <activity
+            android:name=".BookingDetail"
+            android:exported="false"
+            android:label="Booking Detail" />
+        <activity
+            android:name=".BookingHistory"
+            android:exported="false"
+            android:label="Booking History" />
+        <activity
+            android:name=".confirmBooking"
+            android:exported="false"
+            android:label="Subject Confirm Booking" />
+        <activity
+            android:name=".TuitionCenterDetails"
+            android:exported="false"
+            android:label="Tuition Center Information" />
+        <activity
+            android:name=".addTuitionCenter"
+            android:exported="false"
+            android:label="Add Tuition Center" />
+        <activity
+            android:name=".UserProfile"
+            android:exported="false"
+            android:label="User Profile" />
+        <activity
+            android:name=".Register"
+            android:exported="false"
+            android:label="Register" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

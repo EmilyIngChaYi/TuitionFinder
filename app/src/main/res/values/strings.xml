@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">Tuition Finder</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="full_name">Full Name*</string>
+    <string name="email">E-Mail*</string>
+    <string name="contact_number">Contact Number*</string>
+    <string name="ic_number">IC Number*</string>
+    <string name="age">Age*</string>
+    <string name="pwd">Password*</string>
+    <string-array name="grade">
+        <item>Year 1</item>
+        <item>Year 2</item>
+        <item>Year 3</item>
+        <item>Year 4</item>
+        <item>Year 5</item>
+        <item>Year 6</item>
+        <item>Form 1</item>
+        <item>Form 2</item>
+        <item>Form 3</item>
+        <item>Form 4</item>
+        <item>Form 5</item>
+        <item>None of the above</item>
+    </string-array>
+    >
+    <string name="student">Student</string>
+    <string name="tuition_center">Tuition Center</string>
+    <string name="primary_school">Primary School</string>
+    <string name="confirm_password">Confirm Password*</string>
+    <string name="register">Register</string>
+    <string name="already_have_account_click_here">Already have account?Click here</string>
+    <string name="doesn_t_have_account_click_here">Doesn\'t have account?Click here</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="chat">Chat</string>
+    <string name="add">Add</string>
+    <string name="user">User</string>
+    <string name="user_id">User ID:</string>
+    <string name="username">Username:</string>
+    <string name="Email">Email:</string>
+    <string name="contactNumber">Contact Number:</string>
+    <string name="ic_num">IC Number:</string>
+    <string name="Age">Age:</string>
+    <string name="grade">Grade:</string>
+    <string name="User">User:</string>
+    <string name="school">School:</string>
+    <string name="todo">TODO</string>
+    <string name="logout">Logout</string>
+    <string name="tuition_center_name">Tuition Center Name*</string>
+    <string name="tuition_center_contact_number">Tuition Center Contact Number*</string>
+    <string name="tuition_center_address">Tuition Center Address*</string>
+    <string name="tuition_center_postcode">Tuition Center Postcode*</string>
+    <string name="name_of_person_in_charge">Name of Person In Charge*</string>
+    <string name="contact_number_of_person_in_charge">Contact Number of Person In Charge*</string>
+    <string name="tuition_for_primary_student_year1_year6">Tuition for primary student (Year1-Year6)</string>
+    <string name="tuition_for_secondary_student_form1_form5">Tuition for Secondary Student (Form1-Form5)</string>
+    <string name="subject_available">Subject Available:</string>
+    <string name="bahasa_inggeris_english_primary">Bahasa Inggeris / English (Primary)</string>
+    <string name="bahasa_melayu_malay_primary">Bahasa Melayu / Malay (Primary)</string>
+    <string name="bahasa_cina_chinese_primary">Bahasa Cina / Chinese (Primary)</string>
+    <string name="matematik_mathematics_primary">Matematik / Mathematics (Primary)</string>
+    <string name="sains_science_primary">Sains / Science (Primary)</string>
+    <string name="secondary_school">Secondary School</string>
+    <string name="bahasa_melayu_secondary">Bahasa Melayu / Malay (Secondary)</string>
+    <string name="bahasa_inggeris_english_secondary">Bahasa Inggeris / English (Secondary)</string>
+    <string name="bahasa_cina_chinese_secondary">Bahasa Cina / Chinese (Secondary)</string>
+    <string name="matematik_mathematics_secondary">Matematik / Mathematics (Secondary)</string>
+    <string name="sains_science_secondary">Sains / Science (Secondary)</string>
+    <string name="sejarah_secondary">Sejarah (Secondary)</string>
+    <string name="geografi_secondary">Geografi (Secondary)</string>
+    <string name="additional_mathematics_secondary">Additional Mathematics (Secondary)</string>
+    <string name="ekonomi_secondary">Ekonomi (Secondary)</string>
+    <string name="biologi_biology_secondary">Biologi / Biology (Secondary)</string>
+    <string name="fizik_physics_secondary">Fizik / Physics (Secondary)</string>
+    <string name="kimia_chemistry_secondary">Kimia / Chemistry (Secondary)</string>
+    <string name="perdagangan_secondary">Perdagangan (Secondary)</string>
+    <string name="akaun_account_secondary">Akaun / Account (Secondary)</string>
+    <string name="description">Additional Description*</string>
+    <string name="save">Save</string>
+    <string name="start_business_hour">Start Business Hour*</string>
+    <string name="end_business_hour">End Business Hour*</string>
+    <string name="price_price_range_per_subject_1_month">Price / Price Range (RM) per Subject (1 Month)*</string>
+    <string name="available_for">Available for:</string>
+    <string name="subjects_available">Subjects Available:</string>
+    <string name="address">Address:</string>
+    <string name="business_hour">Business Hour:</string>
+    <string name="Description">Description:</string>
+    <string name="review">Reviews</string>
+    <string name="book">Book</string>
+    <string name="price">Price:</string>
+    <string name="name">Name:</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="select_subject">Select Subject:</string>
+    <string name="update_profile_picture">Save Profile Picture</string>
+    <string name="select_image_to_upload">Select image to upload:</string>
+    <string name="choose_image">choose image</string>
+    <string name="alert_text">Alert text</string>
+    <string name="each_tuition_center_account_only_allowed_to_handle_one_tuition_center">**Each tuition center account only allowed to handle one tuition center.</string>
+    <string-array name="state">
+        <item>State*</item>
+        <item>Johor</item>
+        <item>Kedah</item>
+        <item>Kelantan</item>
+        <item>Malacca</item>
+        <item>Negeri Sembilan</item>
+        <item>Pahang</item>
+        <item>Penang</item>
+        <item>Perak</item>
+        <item>Perlis</item>
+        <item>Sabah</item>
+        <item>Sarawak</item>
+        <item>Selangor</item>
+        <item>Terengganu</item>
+    </string-array>
+</resources>

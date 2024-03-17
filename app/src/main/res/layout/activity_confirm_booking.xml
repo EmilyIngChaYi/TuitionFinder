@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    tools:context=".confirmBooking">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/name"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#030303"/>
+
+                <TextView
+                    android:id="@+id/StudentName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#030303"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/Email"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#030303"/>
+
+                <TextView
+                    android:id="@+id/StudentEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#030303"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/grade"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#030303"/>
+
+                <TextView
+                    android:id="@+id/StudentGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#030303"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/contactNumber"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#030303"/>
+
+                <TextView
+                    android:id="@+id/StudentPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#030303"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/select_subject"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#030303"/>
+
+
+            <CheckBox
+                android:id="@+id/primary_bm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/bahasa_melayu_malay_primary"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/primary_bi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/bahasa_inggeris_english_primary"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/primary_bc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/bahasa_cina_chinese_primary"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/primary_maths"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/matematik_mathematics_primary"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/primary_sc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/sains_science_primary"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/secondary_bm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/bahasa_melayu_secondary"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/secondary_bi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/bahasa_inggeris_english_secondary"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/secondary_bc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/bahasa_cina_chinese_secondary"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/secondary_maths"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/matematik_mathematics_secondary"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/secondary_sc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/sains_science_secondary"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/secondary_geo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/geografi_secondary"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/secondary_sej"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/sejarah_secondary"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/secondary_addmaths"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/additional_mathematics_secondary"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/secondary_ekonomi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/ekonomi_secondary"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/secondary_acc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/akaun_account_secondary"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/secondary_phy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/fizik_physics_secondary"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/secondary_bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/biologi_biology_secondary"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/secondary_che"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/kimia_chemistry_secondary"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <CheckBox
+                android:id="@+id/secondary_pd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/perdagangan_secondary"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/confirmBooking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/confirm_booking"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    tools:context=".addTuitionCenter">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/each_tuition_center_account_only_allowed_to_handle_one_tuition_center"
+                android:textColor="#455A64"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/TuitionCenterName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints=""
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="@string/tuition_center_name"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textColorHint="#757575"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/TuitionPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:autofillHints=""
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="@string/tuition_center_contact_number"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:textColorHint="#757575"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/TuitionAddress"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints=""
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="@string/tuition_center_address"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="8dp"
+                android:textColorHint="#757575"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/TuitionPostcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:autofillHints=""
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="@string/tuition_center_postcode"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColorHint="#757575"
+                android:textSize="16sp"/>
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:dropDownSelector="@android:drawable/btn_dropdown"
+                android:entries="@array/state"
+                android:foregroundTint="#FFFFFF"
+                android:minHeight="48dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+
+            <EditText
+                android:id="@+id/TuitionPersonInChargeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:autofillHints=""
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="@string/name_of_person_in_charge"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#757575"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/TuitionPersonInChargePhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:autofillHints=""
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="@string/contact_number_of_person_in_charge"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textColorHint="#757575"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/businessHour_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="@string/start_business_hour"
+                android:importantForAutofill="no"
+                android:inputType="time"
+                android:minHeight="48dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textColorHint="#757575"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/businessHour_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="@string/end_business_hour"
+                android:importantForAutofill="no"
+                android:inputType="time"
+                android:minHeight="48dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textColorHint="#757575"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:ems="10"
+                android:hint="@string/price_price_range_per_subject_1_month"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textColorHint="#757575"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/select_image_to_upload"
+                    android:textColor="#030303"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <Button
+                        android:id="@+id/chooseImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minHeight="48dp"
+                        android:text="@string/choose_image"/>
+
+                    <TextView
+                        android:id="@+id/alertText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/alert_text"
+                        android:textSize="14sp"
+                        android:textColor="#757575"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <CheckBox
+                android:id="@+id/PrimaryStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/tuition_for_primary_student_year1_year6"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/MiddleStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/tuition_for_secondary_student_form1_form5"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subject_available"
+                android:textColor="#030303"
+                android:textSize="14sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"/>
+
+
+            <CheckBox
+                android:id="@+id/primary_BM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/bahasa_melayu_malay_primary"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/primary_BI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/bahasa_inggeris_english_primary"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/primary_BC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/bahasa_cina_chinese_primary"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/primary_Maths"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/matematik_mathematics_primary"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/primary_SC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/sains_science_primary"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/secondary_BM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/bahasa_melayu_secondary"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/secondary_BI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/bahasa_inggeris_english_secondary"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/secondary_BC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/bahasa_cina_chinese_secondary"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/secondary_Maths"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/matematik_mathematics_secondary"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/secondary_Sc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/sains_science_secondary"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/secondary_Geo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/geografi_secondary"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/secondary_Sej"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/sejarah_secondary"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/secondary_AddMaths"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/additional_mathematics_secondary"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/secondary_Ekonomi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/ekonomi_secondary"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/secondary_Acc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/akaun_account_secondary"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/secondary_Phy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/fizik_physics_secondary"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/secondary_Bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/biologi_biology_secondary"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/secondary_Che"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/kimia_chemistry_secondary"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/secondary_PD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/perdagangan_secondary"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="start"
+                android:hint="@string/description"
+                android:inputType="textMultiLine"
+                android:minHeight="48dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="8dp"
+                android:textColorHint="#757575"
+                android:textSize="16sp"
+                android:importantForAutofill="no" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/savaBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:text="@string/save"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
